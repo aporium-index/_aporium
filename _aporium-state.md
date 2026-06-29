@@ -3,18 +3,24 @@ slug: _aporium
 name: Aporium
 category: knowledge-base
 domain: ai-psychology
-sensitivity: internal
+description: >
+  Personal knowledge base at the intersection of AI, human psychology,
+  and meaning-making. Built on the Karpathy LLM Wiki pattern.
+location: ~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Aporium
+location_note: iCloud vault — agent dev-state at workspace/_aporium/
 primary_language: markdown
 languages: []
 primary_framework: obsidian
 frameworks: []
 platform: cross-platform
-repo_url: local
+repo_url: https://github.com/aporium-index/aporium-vault
 repo_type: bare
-default_branch: main
+default_branch: master
+sensitivity: internal
 has_agents_md: true
 has_gitignore: true
-state: operational
+phase: survey
+status: null
 condition: condition-green
 priority: P1
 criticality: tier-1
@@ -27,32 +33,40 @@ stale_threshold_days: 14
 depends_on: []
 depended_on_by: []
 tags: [knowledge-base, obsidian, wiki, llm]
-file_version: "1.0"
+file_version: "1.1"
 ---
 
 # Aporium
 
-Personal knowledge base at the intersection of AI, human psychology, and meaning-making. Built on the Karpathy LLM Wiki pattern. Obsidian vault synced via iCloud.
-
-## Location
-
-`~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Aporium`
-
-Dev-state bare repo at `workspace/_aporium/`.
-
 ## Current Focus
 
-sisko bootstrap — defining control plane standards. Branch cleanup + partial merge complete. OKF frontmatter applied to sisko files, Aporium wiki pending.
+sisko → ADAMA rename and phase model consolidation. Branch cleanup complete. Compilation pipeline stable.
 
-## Next Actions
+## Full Backlog
 
-- [ ] OKF frontmatter retrofit on Aporium wiki pages
-- [ ] Resolve `.opencode/node_modules` pollution in vault
+- [ ] OKF frontmatter retrofit on all 845 wiki pages
+- [ ] Resolve .opencode/node_modules pollution in vault
+- [ ] Ontological preface test protocol
 - [ ] Decide Obsidian plugin trial sequence
+- [ ] Raw provenance repair wave for Author/Source gaps
+- [ ] Decide first deep research packet topic
 
 ## Blockers
 
 None.
+
+## Compliance Gaps
+
+- **Wiki files not OKF conformant** — 845 files need frontmatter retrofit
+- **No CI pipeline** — no automated validation for wiki files
+
+## Long-Term Direction
+
+Phase 1: OKF frontmatter retrofit across all wiki pages.
+Phase 2: Compilation pipeline stabilization and agent-driven synthesis.
+Phase 3: Public knowledge graph export.
+
+Threshold: if the compilation pipeline can reliably produce publication-ready syntheses, promote to `outpost` phase with P0 priority for a production release sprint.
 
 ## Open Decisions
 
@@ -63,12 +77,14 @@ None.
 
 | Date | Decision | Rationale |
 |------|----------|-----------|
-| 2026-06-28 | Bare git repo for dev-state | iCloud sync conflicts with full git repos in vault |
-| 2026-06-28 | Dev-state dir renamed to _aporium | Single underscore avoids markdown italic, matches sisko convention |
+| 2026-06-28 | Bare git repo for dev-state | iCloud sync conflicts with full git repos |
+| 2026-06-28 | ADAMA as control plane name | Distinctive, won't collide with project naming |
 
-## Notes
+## Repo Notes
 
-Wikilinks in this file resolve within Aporium's vault context, not sisko's.
+Aporium lives outside `workspace/` due to iCloud constraints.
+Wikilinks resolve within Aporium's vault context, not ADAMA's.
+Dev-state has its own git repo (`.git`) separate from the vault's bare git database (`Aporium.git/`).
 
 ## Links
 
